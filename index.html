@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Custom Select</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+<div class="select-container">
+  <select class="js-custom-select custom-select" aria-label="Product variant" id="product-variant">
+    <option value="3-pack" class="select-dropdown__list-item" selected>3-Pack</option>
+    <option value="6-pack" class="select-dropdown__list-item">6-Pack</option>
+    <option value="12-pack" class="select-dropdown__list-item">12-Pack</option>
+    <option value="24-pack" class="select-dropdown__list-item">24-Pack</option>
+  </select>
+</div>
+
+<div class="select-container">
+  <select class="js-custom-select custom-select" aria-label="Product variant 2" id="product-variant-2">
+    <option value="24-Shots" class="select-dropdown__list-item" selected>24-Shots</option>
+    <option value="48-Shots" class="select-dropdown__list-item">48-Shots</option>
+    <option value="144-Shots" class="select-dropdown__list-item">144-Shots</option>
+    <option value="288-Shots" class="select-dropdown__list-item">288-Shots</option>
+  </select>
+</div>
+
+<script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+body {
+    display: flex;
+    gap: 48px;
+}
+
+.select-container {
+    width: 40%;
+}
+
+.custom-select {
+    display: none;
+}
+
+.select-dropdown {
+    display: inline-block;
+    font-family: 'Play', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    width: 100%;
+}
+
+.select-dropdown__indicator {
+    cursor: pointer;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.select-dropdown__indicator::after {
+    border-style: solid;
+    border-width: 1px 1px 0 0;
+    content: '';
+    display: inline-block;
+    height: 0.45em;
+    transform: rotate(135deg) translateY(50%);
+    width: 0.45em;
+}
+
+.select-dropdown__indicator.active {
+    transform: translate(-4px, -50%) rotate(180deg);
+}
+
+.select-dropdown:last-child {
+    margin-right: 0;
+}
+
+.select-dropdown__button {
+    background-color: white;
+    border: 1px solid darkgray;
+    color: black;
+    cursor: pointer;
+    height: 64px;
+    padding: 20px;
+    text-align: left;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.select-dropdown__button:focus {
+    outline: none;
+}
+
+.select-dropdown__list {
+    border: 1px solid darkgray;
+    display: block;
+    left: 0;
+    list-style-type: none;
+    opacity: 0;
+    overflow: auto;
+    padding: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    transform: scale(1, 0);
+    transform-origin: top left;
+    transition: all ease-in-out 0.2s;
+    z-index: 2;
+    margin-top: 8px;
+    border-radius: 8px;
+}
+
+.select-dropdown__list.active {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1, 1);
+}
+
+.select-dropdown__list-item {
+    background: white;
+    cursor: pointer;
+    display: block;
+    list-style-type: none;
+    padding: 12px 20px;
+    text-align: left;
+    transition: all ease-in-out 0.2s;
+}
+
+.select-dropdown__list-item.selected {
+    background: lightgray;
+}
+
+.select-dropdown__list-item:hover {
+    background-color: #f2f2f2;
+    transition: all ease-in-out 0.2s;
+}
