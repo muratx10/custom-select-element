@@ -5,8 +5,10 @@ You can add event listeners to the hidden `select` element to handle changes.
 
 ## How to use?
 1. Include the `index.js` script somewhere in your project.
-2. Add the select element to your HTML with its options. (define classnames for the select element and the options).
+2. Add the `select` element to your HTML with its options as usual. (define classnames for the 
+select element and the options).
 3. Add the custom select styles to your CSS file (make changes to the styles as per your requirements).
+4. Voila!
 
 See the example for more details.
 
