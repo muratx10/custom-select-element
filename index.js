@@ -146,6 +146,9 @@ class CustomSelectElement {
 						}
 					});
 
+					const changeEvent = new Event('change');
+					this.select[k].dispatchEvent(changeEvent);
+
 					[...this.select[k].options].forEach((option) => {
 						if (option.value === value) {
 							option.setAttribute('selected', '');
