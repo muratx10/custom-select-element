@@ -8,4 +8,6 @@ A lightweight, pure JavaScript, CSS, and HTML solution for customizing the defau
 
 See the example for more details.
 
+Enjoy! 🎉
+
 ### [Demo](https://muratx10.github.io/custom-select-element/)
